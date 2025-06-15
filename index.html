@@ -1,18 +1,16 @@
-
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lionel Kperou | Portfolio</title>
+    <title>Lionel Kperou | Data Scientist</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-white text-gray-800 font-sans">
+  <body class="bg-gray-50 text-gray-800 font-sans">
     <!-- Navbar -->
-    <nav class="bg-blue-800 text-white p-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Lionel Kperou</h1>
-      <ul class="flex space-x-4">
+    <nav class="bg-blue-900 text-white px-6 py-4 flex justify-between items-center shadow">
+      <h1 class="text-xl font-bold tracking-wider">Lionel Kperou</h1>
+      <ul class="flex space-x-6 text-sm md:text-base">
         <li><a href="#about" class="hover:underline">About</a></li>
         <li><a href="#projects" class="hover:underline">Projects</a></li>
         <li><a href="#resume" class="hover:underline">Resume</a></li>
@@ -21,58 +19,62 @@
     </nav>
 
     <!-- About Section -->
-    <section id="about" class="p-6">
-      <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6">
-        <img src="https://via.placeholder.com/150" class="rounded-full w-40 h-40" alt="Lionel Kperou" />
+    <section id="about" class="px-6 py-12 bg-white">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
+        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Lionel Kperou" class="rounded-full w-48 h-48 shadow-lg object-cover" />
         <div>
-          <h2 class="text-2xl font-bold mb-2">About Me</h2>
-          <p class="mb-2">🎓 Data Scientist | Statistician</p>
-          <p class="mb-2">💻 Web and Python Developer</p>
-          <p>🧠 AI, data analysis, and open-source technologies</p>
+          <h2 class="text-3xl font-bold mb-3">About Me</h2>
+          <p class="text-lg mb-2">🎓 Data Scientist | Statistician</p>
+          <p class="text-lg mb-2">💻 Web & Python Developer</p>
+          <p class="text-lg">🧠 Passionate about AI, data analysis, and open-source technologies.</p>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="p-6 bg-gray-50">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl font-bold mb-4">Projects</h2>
-        <div class="grid md:grid-cols-2 gap-4">
-          <div class="border p-4 rounded bg-white shadow">
-            <h3 class="font-semibold">Machine Learning Project</h3>
-            <p>Build a predictive model with scikit-learn</p>
-            <a href="#" class="text-blue-700 underline">View on GitHub</a>
+    <section id="projects" class="px-6 py-12 bg-gray-100">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+            <h3 class="text-xl font-semibold mb-2">Machine Learning Project</h3>
+            <p class="mb-3">Built a predictive model with scikit-learn and real-world data.</p>
+            <a href="#" class="text-blue-700 font-medium hover:underline">🔗 View on GitHub</a>
           </div>
-          <div class="border p-4 rounded bg-white shadow">
-            <h3 class="font-semibold">Data Visualization Tool</h3>
-            <p>Create an interactive dashboard with D3.js</p>
-            <a href="#" class="text-blue-700 underline">View on GitHub</a>
+          <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+            <h3 class="text-xl font-semibold mb-2">Data Visualization Tool</h3>
+            <p class="mb-3">Interactive dashboard using D3.js and real-time data streams.</p>
+            <a href="#" class="text-blue-700 font-medium hover:underline">🔗 View on GitHub</a>
           </div>
-          <div class="border p-4 rounded bg-white shadow">
-            <h3 class="font-semibold">Web Development Project</h3>
-            <p>Developed a responsive web app with Django and React</p>
-            <a href="#" class="text-blue-700 underline">View on GitHub</a>
+          <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+            <h3 class="text-xl font-semibold mb-2">Web Dev Portfolio</h3>
+            <p class="mb-3">Responsive app built with Django and React for personal use.</p>
+            <a href="#" class="text-blue-700 font-medium hover:underline">🔗 View on GitHub</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Resume Section -->
-    <section id="resume" class="p-6">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl font-bold mb-4">Resume</h2>
-        <a href="resume.pdf" class="bg-gray-800 text-white px-4 py-2 rounded" download>⬇ Download Resume</a>
+    <section id="resume" class="px-6 py-12 bg-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Resume</h2>
+        <a href="resume.pdf" download class="inline-block bg-blue-800 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+          ⬇ Download My Resume
+        </a>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="p-6 bg-gray-100">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl font-bold mb-4">Contact</h2>
-        <p class="mb-2">📧 <a href="mailto:lionelkperou@gmail.com" class="text-blue-800 underline">lionelkperou@gmail.com</a></p>
+    <section id="contact" class="px-6 py-12 bg-gray-100">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Contact</h2>
+        <p class="text-lg">📧 <a href="mailto:lionelkperou@gmail.com" class="text-blue-800 underline">lionelkperou@gmail.com</a></p>
       </div>
     </section>
 
-    <footer class="text-center text-sm p-4 bg-white border-t">© 2025 Lionel Kperou</footer>
+    <footer class="text-center text-sm p-4 bg-white border-t mt-6">
+      © 2025 Lionel Kperou — All rights reserved.
+    </footer>
   </body>
 </html>
